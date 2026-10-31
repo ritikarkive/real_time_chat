@@ -18,12 +18,12 @@ const PORT = process.env.PORT || 5001;
 app.use(express.json());
 app.use(cookieParser());
 
+const frontendOrigin =
+  process.env.FRONTEND_URL || "http://localhost:5173";
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://my-chat-app-moderator.netlify.app", // Replace with your actual Vercel URL
-    ],
+    origin: ["http://localhost:5173", frontendOrigin],
     credentials: true,
   })
 );

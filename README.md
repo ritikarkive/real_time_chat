@@ -96,7 +96,7 @@ Make sure you have:
 
 ## 1️⃣ Clone the Repository
 
-git clone https://github.com/dishamittalnitb/Real-time-chat-moderation-and-monitoring.git
+git clone https://github.com/ritikarkive/real_time_chat.git
 cd Real-time-chat-moderation-and-monitoring
 
 ## 2️⃣ Run the FastAPI Moderation Service
@@ -205,8 +205,8 @@ Advanced ML models
 
 👩‍💻 Author
 
-Disha Mittal
+Ritika Rani Ujjainia
 B.Tech Computer Science & Engineering
 MANIT Bhopal
 
-GitHub: https://github.com/dishamittalnitb
+GitHub: https://github.com/ritikarkive

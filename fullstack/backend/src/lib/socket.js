@@ -7,9 +7,13 @@ import express from "express";
 const app = express();
 const server = http.createServer(app);
 
+const frontendOrigin =
+  process.env.FRONTEND_URL || "http://localhost:5173";
+
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://my-chat-app-moderator.netlify.app"],
+    origin: ["http://localhost:5173", frontendOrigin],
+    credentials: true,
   },
 });
 
